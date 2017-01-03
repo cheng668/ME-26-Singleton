@@ -11,6 +11,16 @@ public:
 	void reset();
 	using Counted<Printer>::objectCount;
 	using Counted<Printer>::TooManyObject;
+	
+	//单例模式中取实例函数
+	/*
+	Printer& thePrinter()
+	{
+		static Printer p;
+		return p;
+	}
+	*/
+
 private:
 	Printer();
 	Printer(const Printer& rhs);
