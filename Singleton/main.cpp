@@ -1,4 +1,5 @@
 #include "Printer.h"
+#include "ColorSinglePainter.h"
 #include <iostream>
 void main()
 {
@@ -16,6 +17,12 @@ void main()
 	delete p2;
 	//delete p3;
 
+	// 单例模式（子类扩展）
+	SinglePainter* single = SinglePainter::Instance();
+	single->print();
+
+	delete single;
+
 	_CrtDumpMemoryLeaks();
 	system("pause");
 	return;
@@ -25,4 +32,5 @@ void main()
 output:
 	objectNum:1
 	objectNum:2
+	ColorSinglePainter
 */

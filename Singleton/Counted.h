@@ -30,7 +30,10 @@ Counted<BeingCounted>::Counted(const Counted& rhs)
 template<class BeingCounted>
 void Counted<BeingCounted>::init()
 {
-	if (numObjects >= maxObjects) throw TooManyObject();
+	if (numObjects >= maxObjects)
+	{
+		throw TooManyObject();
+	}
 	++numObjects;
 }
 

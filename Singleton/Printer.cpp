@@ -30,8 +30,6 @@ Printer* Printer::makePrinter()
 	return new Printer();
 }
 
-
-
 void Printer::reset()
 {
 	std::cout << "objectNum:" << objectCount() << std::endl;
