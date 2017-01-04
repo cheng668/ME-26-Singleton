@@ -3,6 +3,8 @@
 
 ColorSinglePainter::ColorSinglePainter()
 {
+	//×¢²á
+	SinglePainter::Register("ColorSinglePainter", this);
 }
 
 
@@ -14,3 +16,5 @@ void ColorSinglePainter::print()
 {
 	std::cout << "ColorSinglePainter" << std::endl;
 }
+// ¶öººµ¥Àý
+ColorSinglePainter* ColorSinglePainter::p = new ColorSinglePainter;
